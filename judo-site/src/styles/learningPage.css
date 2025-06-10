@@ -1,0 +1,247 @@
+.learning-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.learning-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.learning-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.schedule-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.schedule-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.age-range {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.trainer-info, .schedule-info, .description {
+    margin-bottom: 1.5rem;
+}
+
+.trainer-info h3, .schedule-info h3, .description h3 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.schedule-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-info li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-info .day {
+    font-weight: bold;
+    color: #444;
+}
+
+.schedule-info .time {
+    color: #666;
+}
+
+.description p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.card-footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.enroll-button {
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enroll-button:hover {
+    background: #2a5298;
+}
+
+.additional-info {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.additional-info h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    color: #666;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.4;
+}
+
+.info-card li:last-child {
+    border-bottom: none;
+}
+
+.course-image-top {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-image-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.level-badge {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 0.3rem 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.08rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.info-row i {
+    color: #1e3c72;
+    font-size: 1.15rem;
+    min-width: 22px;
+    text-align: center;
+}
+
+.schedule-list {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style: disc;
+    color: #444;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .learning-page {
+        padding: 1rem;
+    }
+
+    .schedule-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .course-image-top {
+        height: 110px;
+    }
+    .level-badge {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.7rem;
+        margin-left: 0.5rem;
+    }
+    .info-row {
+        font-size: 0.98rem;
+    }
+} 

@@ -1,0 +1,265 @@
+.mediaAdmin {
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.controls {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.addButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #f44336;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.albumsList {
+  margin-bottom: 2rem;
+}
+
+.albumsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.albumCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.albumCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.albumCard.selected {
+  border: 2px solid #4CAF50;
+}
+
+.albumCard h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.albumCard p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.albumActions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photosList {
+  margin-top: 2rem;
+}
+
+.photosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.photoCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.photoCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.photoActions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photoCard:hover .photoActions {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalContent h3 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.formGroup input[type="text"],
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formGroup input[type="file"] {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.imagePreview {
+  margin: 1rem 0;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagePreview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modalButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submitButton,
+.deleteButton,
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #da190b;
+}
+
+.cancelButton {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #757575;
+}
+
+@media (max-width: 768px) {
+  .mediaAdmin {
+    padding: 1rem;
+  }
+
+  .albumsGrid,
+  .photosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .modalContent {
+    padding: 1rem;
+    width: 95%;
+  }
+} 

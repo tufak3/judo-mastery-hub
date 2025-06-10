@@ -1,0 +1,336 @@
+.admin-page {
+  padding: 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.primary-button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #333;
+}
+
+.admin-content-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.admin-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-search,
+.admin-select,
+.admin-date-filter {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.admin-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.admin-select {
+  min-width: 150px;
+}
+
+.admin-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge,
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.published {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-badge.draft {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.status-badge.upcoming {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.registration {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.type-badge.training {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.type-badge.masterclass {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.type-badge.competition {
+  background-color: #fce4ec;
+  color: #c2185b;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.icon-button.edit {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.icon-button.delete {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+.primary-button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.secondary-button {
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.9;
+}
+
+/* Стили для форм */
+.admin-form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Стили для сообщений об ошибках и успехе */
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.status-message {
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+  border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+  background-color: #fde7e9;
+  color: #dc3545;
+  border: 1px solid #f5c6cb;
+}
+
+.status-message.info {
+  background-color: #e7f5ff;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* Стили для контактов */
+.contacts-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.contact-content {
+    padding: 10px 0;
+}
+
+.contact-content p {
+    margin: 0;
+    color: #666;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media-section {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.social-media-section h3 {
+    margin-bottom: 20px;
+    color: #333;
+} 

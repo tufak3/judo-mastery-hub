@@ -1,0 +1,251 @@
+.competitions-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.competitions-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.competitions-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f0f0f0;
+    color: #666;
+}
+
+.tab-button.active {
+    background: #1e3c72;
+    color: white;
+}
+
+.tab-button:hover:not(.active) {
+    background: #e0e0e0;
+}
+
+.competitions-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.competition-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+}
+
+.competition-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.competition-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.competition-date {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.competition-content {
+    padding: 1.5rem;
+}
+
+.competition-info {
+    color: #666;
+    line-height: 1.6;
+}
+
+.competition-info p {
+    margin-bottom: 1rem;
+}
+
+.competition-info strong {
+    color: #333;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.category-tag {
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    background: #4caf50;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.competition-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.register-button, .details-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button {
+    background: #1e3c72;
+    color: white;
+}
+
+.register-button:hover {
+    background: #2a5298;
+}
+
+.details-button {
+    background: #f0f0f0;
+    color: #666;
+}
+
+.details-button:hover {
+    background: #e0e0e0;
+}
+
+.competition-results {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.category-results {
+    margin-bottom: 1.5rem;
+}
+
+.category-results h4 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.winners-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.place {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.place-1 {
+    background: #ffd700;
+    color: #333;
+}
+
+.place-2 {
+    background: #c0c0c0;
+    color: #333;
+}
+
+.place-3 {
+    background: #cd7f32;
+    color: white;
+}
+
+.gallery-preview {
+    margin-top: 2rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.photo-thumbnail {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .competitions-page {
+        padding: 1rem;
+    }
+
+    .competition-actions {
+        flex-direction: column;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+} 

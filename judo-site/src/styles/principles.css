@@ -1,0 +1,166 @@
+.principles-page {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.principles-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.principles-title {
+    text-align: center;
+    color: #1e3c72;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.principles-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border-radius: 2px;
+}
+
+.principles-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    border-radius: 10px;
+}
+
+.section-title {
+    color: #2a5298;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.principle-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.principle-item.honor {
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-left: 4px solid #1e3c72;
+}
+
+.principle-number {
+    flex: 0 0 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.principle-text {
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.quote-block {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.quote {
+    font-style: italic;
+    color: #4a5568;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+.quote-author {
+    color: #2a5298;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+}
+
+.section-text {
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .principles-page {
+        padding: 20px 10px;
+    }
+
+    .principles-container {
+        padding: 20px;
+    }
+
+    .principles-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .principles-section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .principle-item {
+        padding: 15px;
+    }
+
+    .principle-text {
+        font-size: 1rem;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+} 
